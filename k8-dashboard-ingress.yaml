@@ -12,8 +12,8 @@ spec:
   rules:
     - http:
         paths:
-          - path: /dashboard(/|$)(.*)
-            pathType: Prefix
+          - path: /dashboard(/|$)
+            pathType: ImplementationSpecific
             backend:
               service:
                 name: kubernetes-dashboard
